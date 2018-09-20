@@ -80,4 +80,9 @@ h1 {
   margin-left: 10px;
 }
 
+/* line 91, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
+.chatbox button {
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=../css/main.map */
