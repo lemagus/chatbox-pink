@@ -1,0 +1,28 @@
+[
+	{
+		"word":"bon[\\sjg]+ou*r", 
+		"match":"regexp",
+		"type":"text",
+		"response": "Bonjour !"
+	},
+	{
+		"word":"au\\s?revoir", 
+		"match":"regexp",
+		"type":"text",
+		"response": "Bye !"
+	},
+	{
+		"word":"fait\\schaud", 
+		"match":"regexp",
+		"type":"temperature",
+		"response": "Il fait [value]° à Mons !"
+	}
+]
+
+
+
+
+
+
+
+

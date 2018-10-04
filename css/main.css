@@ -9,6 +9,11 @@ h1 {
 }
 
 /* line 11, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
+.hidden {
+  display: none;
+}
+
+/* line 15, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
 .chatbox {
   background: hotpink;
   border: 1px solid #333;
@@ -17,21 +22,22 @@ h1 {
   width: 400px;
 }
 
-/* line 20, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
+/* line 24, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
 .chatbox .messages, .chatbox .inputs {
   display: block;
   width: 100%;
 }
 
-/* line 25, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
+/* line 29, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
 .chatbox .messages {
+  position: relative;
   min-height: 300px;
   border: 1px solid #AAA;
   background: white;
 }
 
-/* line 31, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
-.chatbox .messages .me {
+/* line 37, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
+.chatbox .messages .me, .chatbox .messages .bot {
   position: relative;
   background: lime;
   color: white;
@@ -44,8 +50,8 @@ h1 {
   border-radius: 5px;
 }
 
-/* line 49, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
-.chatbox .messages .me:before {
+/* line 55, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
+.chatbox .messages .me:before, .chatbox .messages .bot:before {
   content: "";
   display: block;
   position: absolute;
@@ -58,7 +64,29 @@ h1 {
   border-top: 5px solid lime;
 }
 
-/* line 70, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
+/* line 75, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
+.chatbox .messages .bot {
+  background-color: pink;
+}
+
+/* line 77, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
+.chatbox .messages .bot:before {
+  border-top-color: pink;
+}
+
+/* line 82, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
+.chatbox .messages .wait {
+  background: #CCC;
+  color: white;
+  padding: 0 1em;
+  margin: 0.5em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+/* line 96, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
 .chatbox .inputs {
   display: flex;
   flex-wrap: wrap;
@@ -66,21 +94,21 @@ h1 {
   margin-top: 10px;
 }
 
-/* line 77, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
+/* line 103, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
 .chatbox .inputs input {
   flex-grow: 1;
   border: 1px solid #171717;
   padding: 0.5em;
 }
 
-/* line 83, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
+/* line 109, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
 .chatbox .inputs button {
   width: 30px;
   padding: 0.5em;
   margin-left: 10px;
 }
 
-/* line 91, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
+/* line 117, /Users/goyza/Desktop/Mons/2019/chatbox/sass/main.scss */
 .chatbox button {
   text-transform: uppercase;
 }

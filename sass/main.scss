@@ -8,6 +8,10 @@ h1 {
 	color: $supercolor;
 }
 
+.hidden {
+	display: none;
+}
+
 .chatbox {
 	
 	background: $supercolor;
@@ -24,11 +28,13 @@ h1 {
 	
 	.messages {
 		
+		position: relative;
+		
 		min-height: 300px;
 		border: 1px solid #AAA;
 		background: white;
 		
-		.me {
+		.me, .bot {
 			
 			$meBg: lime;
 			$arrowSize: 5px;
@@ -65,6 +71,26 @@ h1 {
 			}
 			
 		}	
+		
+		.bot {
+			background-color: pink;
+			&:before {
+				border-top-color: pink;
+			}
+		}
+		
+		.wait {
+			background: #CCC;
+			color: white;
+			padding: 0 1em;
+			margin:0.5em;
+			
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			
+			border-radius: 5px;
+		}
 	}
 	
 	.inputs {
